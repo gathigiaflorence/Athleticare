@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A"
+    android:padding="24dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/rounded_white_card"
+            android:backgroundTint="#F8FAFC"
+            android:padding="24dp"
+            android:elevation="4dp"
+            android:layout_margin="20dp">
+
+            <!-- App Logo -->
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/login_background"
+                android:scaleType="centerCrop"
+                android:contentDescription="App Logo"
+                android:layout_marginBottom="12dp" />
+
+            <!-- App Name -->
+            <TextView
+                android:id="@+id/appName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AthletiCare"
+                android:textSize="32sp"
+                android:textStyle="bold|italic"
+                android:textColor="#16A34A"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Motto -->
+            <TextView
+                android:id="@+id/appMotto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Injury Recovery Starts Here"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="#64748B"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Sign Up Title -->
+            <TextView
+                android:id="@+id/signupTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#0F172A"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Full Name -->
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:backgroundTint="#16A34A"
+                android:textColor="#0F172A"
+                android:textColorHint="#94A3B8"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Email -->
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="#16A34A"
+                android:textColor="#0F172A"
+                android:textColorHint="#94A3B8"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Password -->
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:backgroundTint="#16A34A"
+                android:textColor="#0F172A"
+                android:textColorHint="#94A3B8"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Confirm Password -->
+            <EditText
+                android:id="@+id/editTextConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:backgroundTint="#16A34A"
+                android:textColor="#0F172A"
+                android:textColorHint="#94A3B8"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Role Label -->
+            <TextView
+                android:text="Select Role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0F172A"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Role Spinner -->
+            <Spinner
+                android:id="@+id/spinnerRole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#16A34A"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Team Label -->
+            <TextView
+                android:id="@+id/textViewSelectTeam"
+                android:text="Select Team (Coach Only)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0F172A"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Team Spinner -->
+            <Spinner
+                android:id="@+id/spinnerTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#16A34A"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Sign Up Button -->
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Sign Up"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#16A34A"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

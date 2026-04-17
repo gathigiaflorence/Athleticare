@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TITLE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Injury Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#16A34A"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <!-- FILTER CARD -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_white_card"
+        android:backgroundTint="#F8FAFC"
+        android:padding="12dp"
+        android:layout_marginBottom="10dp">
+
+        <!-- Athlete ID -->
+        <EditText
+            android:id="@+id/editTextSearchId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Athlete ID"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:padding="10dp"
+            android:inputType="text"
+            android:textColor="#0F172A"
+            android:textColorHint="#64748B"
+            android:imeOptions="actionSearch" />
+
+        <!-- Sport -->
+        <EditText
+            android:id="@+id/editTextSearchSport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sport (optional)"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:inputType="text"
+            android:textColor="#0F172A"
+            android:textColorHint="#64748B"
+            android:imeOptions="actionSearch" />
+
+        <!-- Body Part Filter -->
+        <EditText
+            android:id="@+id/editTextBodyPart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Body Part (KNEE, ANKLE...)"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:inputType="text"
+            android:textColor="#0F172A"
+            android:textColorHint="#64748B" />
+
+        <!-- Severity Filter -->
+        <EditText
+            android:id="@+id/editTextSeverity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Severity (Mild, Moderate, Severe)"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:inputType="text"
+            android:textColor="#0F172A"
+            android:textColorHint="#64748B" />
+
+        <!-- SEARCH BUTTON -->
+        <Button
+            android:id="@+id/btnSearchInjuries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filter Injuries"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#16A34A"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- QUICK STATS HEADER -->
+    <TextView
+        android:id="@+id/textStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent Injuries Overview"
+        android:textStyle="bold"
+        android:textColor="#F8FAFC"
+        android:layout_marginBottom="8dp" />
+
+    <!-- LOADING -->
+    <TextView
+        android:id="@+id/textLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:textColor="#94A3B8"
+        android:layout_marginBottom="8dp" />
+
+    <!-- EMPTY -->
+    <TextView
+        android:id="@+id/textEmptyState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No injury records found"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:textColor="#94A3B8"
+        android:layout_marginBottom="8dp" />
+
+    <!-- RESULTS -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerInjuries"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="10dp"
+        android:overScrollMode="never"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

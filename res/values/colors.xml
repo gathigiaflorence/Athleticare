@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="deep_teal">#800020</color>
+    <color name="light_gray">#F5F5DC</color>
+    <color name="primary_text">#151514</color>
+    <color name="secondary_text">#757575</color>
+    <color name="amber">#877B36</color>
+    <color name="black">#151514</color>
+
+
+</resources>

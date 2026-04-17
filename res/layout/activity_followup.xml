@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#0F172A"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER -->
+        <TextView
+            android:id="@+id/titleFollowUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Physio Follow-Up"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#16A34A"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track athlete recovery progress"
+            android:textSize="14sp"
+            android:textColor="#94A3B8"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- SEARCH ATHLETE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_white_card"
+            android:backgroundTint="#F8FAFC"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/editTextSearchId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search Athlete ID"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColor="#0F172A"
+                android:textColorHint="#64748B"
+                android:drawableStart="@android:drawable/ic_menu_search" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search Athlete"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#16A34A"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- ATHLETE INJURY DETAILS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_white_card"
+            android:backgroundTint="#F8FAFC"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Athlete Details"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#16A34A"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: -"
+                android:textSize="15sp"
+                android:textColor="#0F172A"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/textViewSport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sport: -"
+                android:textSize="15sp"
+                android:textColor="#0F172A"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/textViewInjuryType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Injury Type: -"
+                android:textSize="15sp"
+                android:textColor="#0F172A"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/textViewInjuryArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Injury Area: -"
+                android:textSize="15sp"
+                android:textColor="#0F172A"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/textViewDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recovery Duration: -"
+                android:textSize="15sp"
+                android:textColor="#0F172A" />
+        </LinearLayout>
+
+        <!-- ASSESS PROGRESS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_white_card"
+            android:backgroundTint="#F8FAFC"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assess Progress"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#16A34A"
+                android:layout_marginBottom="10dp" />
+
+            <Spinner
+                android:id="@+id/spinnerProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- RECORD TREATMENT DONE -->
+        <EditText
+            android:id="@+id/editTextTreatment"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Record Treatment Done"
+            android:background="@drawable/rounded_white_card"
+            android:backgroundTint="#F8FAFC"
+            android:padding="14dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:textColor="#0F172A"
+            android:textColorHint="#64748B"
+            android:layout_marginBottom="16dp" />
+
+        <!-- ADD RECOMMENDATIONS -->
+        <EditText
+            android:id="@+id/editTextRecommendation"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Update Recommendations"
+            android:background="@drawable/rounded_white_card"
+            android:backgroundTint="#F8FAFC"
+            android:padding="14dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:textColor="#0F172A"
+            android:textColorHint="#64748B"
+            android:layout_marginBottom="20dp" />
+
+        <!-- SAVE FOLLOW-UP REPORT -->
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Follow-Up Report"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#16A34A"
+            android:padding="14dp" />
+
+    </LinearLayout>
+
+</ScrollView>

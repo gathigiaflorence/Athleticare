@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:fillViewport="true"
+        android:layout_above="@+id/btnLogout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- LOGO SECTION -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="18dp">
+
+                <ImageView
+                    android:id="@+id/appLogo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/login_background"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="App Logo"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/appName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AthletiCare"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#16A34A"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="2dp" />
+
+                <TextView
+                    android:id="@+id/appMotto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Injury Recovery Starts Here"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:textColor="#64748B"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="14dp" />
+            </LinearLayout>
+
+            <!-- BOUNDARY SEPARATOR -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#1E293B"
+                android:layout_marginBottom="14dp" />
+
+            <!-- HEADER -->
+            <TextView
+                android:id="@+id/welcomeTextMedic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome, Medic!"
+                android:textColor="#16A34A"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player Injury Report"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#16A34A"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp" />
+
+            <!-- INPUT CARD -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_white_card"
+                android:backgroundTint="#F8FAFC"
+                android:padding="14dp"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/editTextPlayerId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Player ID"
+                    android:textColor="#0F172A"
+                    android:textColorHint="#64748B"
+                    android:padding="12dp"
+                    android:drawableStart="@android:drawable/ic_menu_search"
+                    android:inputType="text"
+                    android:background="@android:color/transparent"
+                    android:layout_marginBottom="12dp" />
+
+                <Button
+                    android:id="@+id/btnGenerateReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Generate Report"
+                    android:backgroundTint="#16A34A"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- REPORT TITLE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latest Injury Report"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#F8FAFC"
+                android:layout_marginBottom="10dp" />
+
+            <!-- TABLE -->
+            <TableLayout
+                android:id="@+id/tableInjuries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:background="@drawable/rounded_white_card"
+                android:backgroundTint="#F8FAFC"
+                android:padding="12dp"
+                android:elevation="4dp" />
+
+            <Button
+                android:id="@+id/btnExportPdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Export PDF"
+                android:backgroundTint="#16A34A"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- LOGOUT BUTTON -->
+    <LinearLayout
+        android:id="@+id/btnLogout"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_white_card"
+        android:backgroundTint="#F8FAFC"
+        android:elevation="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚪 Logout"
+            android:textStyle="bold"
+            android:textColor="#DC2626"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A"
+    android:padding="24dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_white_card"
+            android:backgroundTint="#F8FAFC"
+            android:padding="24dp"
+            android:elevation="6dp"
+            android:layout_margin="16dp">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Player"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#16A34A"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter athlete details below"
+                android:textSize="14sp"
+                android:textColor="#64748B"
+                android:layout_marginBottom="20dp" />
+
+            <!-- SECTION: Personal Info -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Details"
+                android:textStyle="bold"
+                android:textColor="#16A34A"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Name -->
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name *"
+                android:inputType="textPersonName"
+                android:backgroundTint="#16A34A"
+                android:textColor="#0F172A"
+                android:textColorHint="#94A3B8"
+                android:layout_marginBottom="14dp" />
+
+            <!-- School ID -->
+            <EditText
+                android:id="@+id/editTextSchoolId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="School ID *"
+                android:inputType="text"
+                android:backgroundTint="#16A34A"
+                android:textColor="#0F172A"
+                android:textColorHint="#94A3B8"
+                android:layout_marginBottom="14dp" />
+
+            <!-- Age -->
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age * (e.g. 18)"
+                android:inputType="number"
+                android:backgroundTint="#16A34A"
+                android:textColor="#0F172A"
+                android:textColorHint="#94A3B8"
+                android:layout_marginBottom="20dp" />
+
+            <!-- SECTION: Team Info -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team Information"
+                android:textStyle="bold"
+                android:textColor="#16A34A"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Gender Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Gender"
+                android:textSize="14sp"
+                android:textColor="#64748B"
+                android:layout_marginBottom="6dp" />
+
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/btnSavePlayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Player"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#16A34A"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

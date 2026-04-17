@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A"
+    android:padding="24dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Appointment"
+            android:textColor="#16A34A"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- ID Input -->
+        <EditText
+            android:id="@+id/editTextIDNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Athlete ID Number"
+            android:background="@drawable/rounded_white_card"
+            android:backgroundTint="#F8FAFC"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="number"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8" />
+
+        <!-- Fetch Button -->
+        <Button
+            android:id="@+id/buttonFetchAthlete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fetch Athlete"
+            android:backgroundTint="#16A34A"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Loading -->
+        <ProgressBar
+            android:id="@+id/progressBarLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Auto Fields -->
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textColor="#F8FAFC"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewInjuryType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Injury Type:"
+            android:textColor="#F8FAFC"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Date -->
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Date"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@drawable/rounded_white_card"
+            android:backgroundTint="#F8FAFC"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8" />
+
+        <!-- Time -->
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Time"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@drawable/rounded_white_card"
+            android:backgroundTint="#F8FAFC"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8" />
+
+        <!-- Spinner -->
+        <Spinner
+            android:id="@+id/spinnerAppointmentType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Book Button -->
+        <Button
+            android:id="@+id/buttonBookAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Appointment"
+            android:backgroundTint="#16A34A"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Clear Button -->
+        <Button
+            android:id="@+id/buttonClearFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear Fields"
+            android:backgroundTint="#1E293B"
+            android:textColor="#16A34A"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Filter -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Appointments by Day"
+            android:textColor="#16A34A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerDayFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewAppointments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Empty -->
+        <TextView
+            android:id="@+id/textViewNoAppointments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No appointments found for this day."
+            android:textColor="#94A3B8"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="40dp" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

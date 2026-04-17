@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A">
+
+    <!-- Main Scroll Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cardLogout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- LOGO SECTION -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="18dp">
+
+                <ImageView
+                    android:id="@+id/appLogo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/login_background"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="App Logo"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/appName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AthletiCare"
+                    android:textSize="26sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#16A34A"
+                    android:layout_marginBottom="2dp" />
+
+                <TextView
+                    android:id="@+id/appMotto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Injury Recovery Starts Here"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:textColor="#64748B"
+                    android:layout_marginBottom="14dp" />
+            </LinearLayout>
+
+            <!-- Separator -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#1E293B"
+                android:layout_marginBottom="14dp" />
+
+            <!-- Welcome -->
+            <TextView
+                android:id="@+id/welcomeTextStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome Student!"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#16A34A"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track your recovery and appointments"
+                android:textSize="16sp"
+                android:textColor="#94A3B8"
+                android:layout_marginBottom="28dp" />
+
+            <!-- Book Appointment -->
+            <LinearLayout
+                android:id="@+id/cardBookAppointment"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_white_card"
+                android:backgroundTint="#F8FAFC"
+                android:elevation="8dp"
+                android:padding="20dp"
+                android:layout_marginBottom="18dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📅 Book Appointment"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#16A34A" />
+            </LinearLayout>
+
+            <!-- Progress -->
+            <LinearLayout
+                android:id="@+id/cardViewProgress"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_white_card"
+                android:backgroundTint="#F8FAFC"
+                android:elevation="8dp"
+                android:padding="20dp"
+                android:layout_marginBottom="18dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📊 View Progress"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#16A34A" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Logout Button -->
+    <LinearLayout
+        android:id="@+id/cardLogout"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_white_card"
+        android:backgroundTint="#F8FAFC"
+        android:elevation="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚪 Logout"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#DC2626" />
+    </LinearLayout>
+
+</RelativeLayout>
