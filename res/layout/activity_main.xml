@@ -25,7 +25,7 @@
             android:elevation="4dp"
             android:layout_margin="24dp">
 
-            <!-- Logo Image -->
+           
             <ImageView
                 android:id="@+id/appLogo"
                 android:layout_width="120dp"
@@ -36,7 +36,7 @@
                 android:contentDescription="App Logo"
                 android:layout_marginBottom="12dp" />
 
-            <!-- App Name -->
+          
             <TextView
                 android:id="@+id/appName"
                 android:layout_width="wrap_content"
@@ -48,7 +48,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="4dp" />
 
-            <!-- Motto -->
+         
             <TextView
                 android:id="@+id/appMotto"
                 android:layout_width="wrap_content"
@@ -60,7 +60,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="24dp" />
 
-            <!-- Login Title -->
+           
             <TextView
                 android:id="@+id/loginTitle"
                 android:layout_width="wrap_content"
@@ -71,7 +71,7 @@
                 android:textColor="#0F172A"
                 android:layout_marginBottom="24dp" />
 
-            <!-- Email Field -->
+           
             <EditText
                 android:id="@+id/emailEditText"
                 android:layout_width="match_parent"
@@ -83,7 +83,7 @@
                 android:textColorHint="#94A3B8"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Password Field -->
+         
             <EditText
                 android:id="@+id/passwordEditText"
                 android:layout_width="match_parent"
@@ -95,7 +95,7 @@
                 android:textColorHint="#94A3B8"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Login Button -->
+         
             <Button
                 android:id="@+id/loginButton"
                 android:layout_width="match_parent"
@@ -105,7 +105,7 @@
                 android:backgroundTint="#16A34A"
                 android:layout_marginBottom="8dp" />
 
-            <!-- Signup Redirect -->
+          
             <TextView
                 android:id="@+id/signupRedirect"
                 android:layout_width="wrap_content"
