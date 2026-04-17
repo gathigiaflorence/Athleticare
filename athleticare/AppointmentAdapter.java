@@ -17,12 +17,11 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
 
     private List<AppointmentModel> list = new ArrayList<>();
 
-    // STATUS CHANGE
     public interface OnStatusChangeListener {
         void onStatusChange(AppointmentModel appointment, String newStatus);
     }
 
-    // DELETE
+    
     public interface OnDeleteListener {
         void onDelete(AppointmentModel appointment);
     }
@@ -57,7 +56,7 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
 
         AppointmentModel a = list.get(pos);
 
-        // 🔥 NAME instead of ID (your request)
+        
         h.id.setText("Name: " + safe(a.getAthleteName()));
 
         h.injury.setText("Injury: " + safe(a.getInjuryType()));
@@ -68,7 +67,7 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
         String status = a.getStatus() != null ? a.getStatus() : "PENDING";
         h.status.setText(status);
 
-        // COLOR STATUS
+       
         switch (status) {
             case "COMPLETED":
                 h.status.setBackgroundColor(Color.parseColor("#16A34A"));
@@ -81,7 +80,7 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
                 break;
         }
 
-        // STATUS BUTTONS
+       
         h.btnPending.setOnClickListener(v -> {
             if (statusListener != null) {
                 statusListener.onStatusChange(a, "PENDING");
@@ -100,7 +99,7 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
             }
         });
 
-        // 🔥 DELETE BUTTON (new)
+        
         h.btnDelete.setOnClickListener(v -> {
             if (deleteListener != null) {
                 deleteListener.onDelete(a);
