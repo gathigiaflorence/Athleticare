@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                                             return;
                                         }
 
-                                        Toast.makeText(MainActivity.this, "Role: " + role, Toast.LENGTH_SHORT).show(); // Debugging line
+                                        Toast.makeText(MainActivity.this, "Role: " + role, Toast.LENGTH_SHORT).show(); 
 
                                         switch (role.toLowerCase()) {
                                             case "coach":
