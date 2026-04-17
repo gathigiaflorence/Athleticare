@@ -41,7 +41,7 @@ public class TeamListActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
 
-        // Views
+       
         recyclerTeam = findViewById(R.id.recyclerTeam);
         teamButtonsLayout = findViewById(R.id.teamButtonsLayout);
         btnAddPlayer = findViewById(R.id.btnAddPlayer);
@@ -49,17 +49,17 @@ public class TeamListActivity extends AppCompatActivity {
         cardMensTeam = findViewById(R.id.cardMensTeam);
         cardWomensTeam = findViewById(R.id.cardWomensTeam);
 
-        // Recycler setup
+        
         playerList = new ArrayList<>();
         adapter = new PlayerAdapter(this, playerList);
 
         recyclerTeam.setLayoutManager(new LinearLayoutManager(this));
         recyclerTeam.setAdapter(adapter);
 
-        // Default load
+       
         loadTeamData(currentTeamType);
 
-        // Team switch
+      
         cardMensTeam.setOnClickListener(v -> {
             currentTeamType = "Men";
             loadTeamData(currentTeamType);
@@ -70,7 +70,7 @@ public class TeamListActivity extends AppCompatActivity {
             loadTeamData(currentTeamType);
         });
 
-        // Add player
+       
         btnAddPlayer.setOnClickListener(v -> {
             startActivity(new Intent(TeamListActivity.this, AddTeamActivity.class));
         });
