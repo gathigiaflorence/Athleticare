@@ -53,7 +53,7 @@ public class AppointmentsActivity extends AppCompatActivity {
         loadAllAppointments();
     }
 
-    // ================= INIT =================
+   
     private void initViews() {
 
         editTextIDNumber = findViewById(R.id.editTextIDNumber);
@@ -75,7 +75,7 @@ public class AppointmentsActivity extends AppCompatActivity {
         recyclerViewAppointments = findViewById(R.id.recyclerViewAppointments);
     }
 
-    // ================= RECYCLER =================
+    
     private void setupRecycler() {
 
         appointmentAdapter = new AppointmentAdapter();
@@ -83,7 +83,6 @@ public class AppointmentsActivity extends AppCompatActivity {
         recyclerViewAppointments.setLayoutManager(new LinearLayoutManager(this));
         recyclerViewAppointments.setAdapter(appointmentAdapter);
 
-        // 🔥 STATUS UPDATE LISTENER
         appointmentAdapter.setOnStatusChangeListener((appointment, newStatus) -> {
 
             db.collection("Appointments")
@@ -92,7 +91,7 @@ public class AppointmentsActivity extends AppCompatActivity {
                     .addOnSuccessListener(unused -> loadAllAppointments());
         });
 
-        // 🗑 DELETE LISTENER
+      
         appointmentAdapter.setOnDeleteListener(appointment -> {
 
             db.collection("Appointments")
@@ -102,7 +101,7 @@ public class AppointmentsActivity extends AppCompatActivity {
         });
     }
 
-    // ================= LISTENERS =================
+   
     private void setupListeners() {
 
         buttonFetchAthlete.setOnClickListener(v -> fetchAthlete());
@@ -113,7 +112,7 @@ public class AppointmentsActivity extends AppCompatActivity {
         editTextTime.setOnClickListener(v -> showTimePicker());
     }
 
-    // ================= FETCH ATHLETE =================
+   
     private void fetchAthlete() {
 
         String idNumber = editTextIDNumber.getText().toString().trim();
@@ -155,7 +154,7 @@ public class AppointmentsActivity extends AppCompatActivity {
                 });
     }
 
-    // ================= BOOK =================
+
     private void bookAppointment() {
 
         String idNumber = editTextIDNumber.getText().toString().trim();
@@ -222,7 +221,7 @@ public class AppointmentsActivity extends AppCompatActivity {
                 });
     }
 
-    // ================= STATUS UPDATE (FIXED) =================
+   
     private void updateAppointmentStatus(String appointmentId, String newStatus) {
 
         db.collection("Appointments")
@@ -237,7 +236,7 @@ public class AppointmentsActivity extends AppCompatActivity {
                 );
     }
 
-    // ================= LOAD =================
+    
     private void loadAllAppointments() {
 
         db.collection("Appointments")
@@ -256,7 +255,7 @@ public class AppointmentsActivity extends AppCompatActivity {
                 });
     }
 
-    // ================= FILTER =================
+  
     private void applyFilter() {
 
         if (spinnerDayFilter.getSelectedItem() == null) return;
@@ -289,7 +288,7 @@ public class AppointmentsActivity extends AppCompatActivity {
         );
     }
 
-    // ================= HELPERS =================
+  
     private void clearFields() {
 
         editTextIDNumber.setText("");
@@ -318,7 +317,7 @@ public class AppointmentsActivity extends AppCompatActivity {
         buttonFetchAthlete.setEnabled(!state);
     }
 
-    // ================= DATE / TIME =================
+  
     private void showDatePicker() {
 
         Calendar c = Calendar.getInstance();
@@ -345,7 +344,7 @@ public class AppointmentsActivity extends AppCompatActivity {
         ).show();
     }
 
-    // ================= SPINNER =================
+   
     private void setupSpinners() {
 
         spinnerAppointmentType.setAdapter(new ArrayAdapter<>(
