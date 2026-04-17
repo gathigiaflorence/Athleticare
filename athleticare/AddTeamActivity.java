@@ -74,7 +74,7 @@ public class AddTeamActivity extends AppCompatActivity {
         db.collection("Users").document(coachId).get()
                 .addOnSuccessListener(doc -> {
 
-                    // 🔥 SAFE sport extraction
+                   
                     String sport = doc.getString("sport");
 
                     if (sport == null || sport.trim().isEmpty()) {
@@ -101,7 +101,7 @@ public class AddTeamActivity extends AppCompatActivity {
         player.put("teamType", teamType);
         player.put("coachId", coachId);
 
-        // ✅ CRITICAL FIX: unified field
+       
         player.put("sport", sport);
 
         btnSave.setEnabled(false);
