@@ -33,7 +33,7 @@ public class FollowUpActivity extends AppCompatActivity {
     private String fetchedName = "";
     private String fetchedSport = "";
 
-    private String fetchedCoachId = "";   // ✅ IMPORTANT
+    private String fetchedCoachId = "";   
     private String currentInjuryId = null;
     private String currentInjuryType = "";
     private String currentInjuryArea = "";
@@ -115,7 +115,7 @@ public class FollowUpActivity extends AppCompatActivity {
 
                     fetchedName = safe(doc.getString("name"));
                     fetchedSport = safe(doc.getString("sport"));
-                    fetchedCoachId = safe(doc.getString("coachId")); // ✅ IMPORTANT
+                    fetchedCoachId = safe(doc.getString("coachId")); 
                     currentSchoolId = schoolId;
 
                     textViewName.setText("Name: " + fetchedName);
@@ -178,10 +178,10 @@ public class FollowUpActivity extends AppCompatActivity {
             return;
         }
 
-        // ✅ THIS IS THE IMPORTANT PART
+       
         Map<String, Object> rec = new HashMap<>();
 
-        rec.put("coachId", fetchedCoachId); // 🔴 FIX THAT CAUSED YOUR ERROR
+        rec.put("coachId", fetchedCoachId); 
         rec.put("schoolId", currentSchoolId);
         rec.put("name", fetchedName);
         rec.put("sport", fetchedSport);
