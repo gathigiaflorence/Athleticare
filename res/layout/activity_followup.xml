@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- HEADER -->
+     
         <TextView
             android:id="@+id/titleFollowUp"
             android:layout_width="wrap_content"
@@ -32,7 +32,7 @@
             android:layout_gravity="center"
             android:layout_marginBottom="20dp" />
 
-        <!-- SEARCH ATHLETE -->
+      
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                 android:textColor="#FFFFFF" />
         </LinearLayout>
 
-        <!-- ATHLETE INJURY DETAILS -->
+      
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
                 android:textColor="#0F172A" />
         </LinearLayout>
 
-        <!-- ASSESS PROGRESS -->
+       
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -152,7 +152,7 @@
                 android:layout_height="wrap_content" />
         </LinearLayout>
 
-        <!-- RECORD TREATMENT DONE -->
+       
         <EditText
             android:id="@+id/editTextTreatment"
             android:layout_width="match_parent"
@@ -167,7 +167,7 @@
             android:textColorHint="#64748B"
             android:layout_marginBottom="16dp" />
 
-        <!-- ADD RECOMMENDATIONS -->
+      
         <EditText
             android:id="@+id/editTextRecommendation"
             android:layout_width="match_parent"
@@ -182,7 +182,7 @@
             android:textColorHint="#64748B"
             android:layout_marginBottom="20dp" />
 
-        <!-- SAVE FOLLOW-UP REPORT -->
+      
         <Button
             android:id="@+id/btnUpdate"
             android:layout_width="match_parent"
