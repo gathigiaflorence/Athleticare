@@ -31,7 +31,7 @@ public class AppointmentDiffCallback extends DiffUtil.Callback {
         AppointmentModel oldItem = oldList.get(oldPos);
         AppointmentModel newItem = newList.get(newPos);
 
-        // 🔥 UNIQUE ID: athlete + date + time
+       
         return Objects.equals(oldItem.getSchoolId(), newItem.getSchoolId()) &&
                 Objects.equals(oldItem.getDate(), newItem.getDate()) &&
                 Objects.equals(oldItem.getTime(), newItem.getTime());
