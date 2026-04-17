@@ -6,7 +6,7 @@ public class Player {
     private String schoolId;
     private Long age;
 
-    // Required empty constructor for Firebase
+   
     public Player() {
     }
 
@@ -16,7 +16,7 @@ public class Player {
         this.age = age;
     }
 
-    // Getters
+    
     public String getName() {
         return name;
     }
@@ -29,7 +29,7 @@ public class Player {
         return age;
     }
 
-    // Setters (optional but useful for Firebase)
+   
     public void setName(String name) {
         this.name = name;
     }
