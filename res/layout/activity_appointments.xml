@@ -12,7 +12,7 @@
         android:orientation="vertical"
         android:gravity="center_horizontal">
 
-        <!-- Title -->
+        
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
             android:textStyle="bold"
             android:layout_marginBottom="24dp" />
 
-        <!-- ID Input -->
+       
         <EditText
             android:id="@+id/editTextIDNumber"
             android:layout_width="match_parent"
@@ -36,7 +36,7 @@
             android:textColor="#0F172A"
             android:textColorHint="#94A3B8" />
 
-        <!-- Fetch Button -->
+       
         <Button
             android:id="@+id/buttonFetchAthlete"
             android:layout_width="match_parent"
@@ -46,7 +46,7 @@
             android:textColor="#FFFFFF"
             android:layout_marginBottom="16dp" />
 
-        <!-- Loading -->
+      
         <ProgressBar
             android:id="@+id/progressBarLoading"
             android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
             android:layout_gravity="center"
             android:layout_marginBottom="16dp" />
 
-        <!-- Auto Fields -->
+       
         <TextView
             android:id="@+id/textViewName"
             android:layout_width="match_parent"
@@ -74,7 +74,7 @@
             android:textSize="16sp"
             android:layout_marginBottom="16dp" />
 
-        <!-- Date -->
+       
         <EditText
             android:id="@+id/editTextDate"
             android:layout_width="match_parent"
@@ -89,7 +89,7 @@
             android:textColor="#0F172A"
             android:textColorHint="#94A3B8" />
 
-        <!-- Time -->
+       
         <EditText
             android:id="@+id/editTextTime"
             android:layout_width="match_parent"
@@ -104,14 +104,14 @@
             android:textColor="#0F172A"
             android:textColorHint="#94A3B8" />
 
-        <!-- Spinner -->
+       
         <Spinner
             android:id="@+id/spinnerAppointmentType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp" />
 
-        <!-- Book Button -->
+      
         <Button
             android:id="@+id/buttonBookAppointment"
             android:layout_width="match_parent"
@@ -121,7 +121,7 @@
             android:textColor="#FFFFFF"
             android:layout_marginBottom="16dp" />
 
-        <!-- Clear Button -->
+       
         <Button
             android:id="@+id/buttonClearFields"
             android:layout_width="match_parent"
@@ -131,7 +131,7 @@
             android:textColor="#16A34A"
             android:layout_marginBottom="32dp" />
 
-        <!-- Filter -->
+       
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -147,7 +147,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp" />
 
-        <!-- List -->
+       
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewAppointments"
             android:layout_width="match_parent"
@@ -155,7 +155,7 @@
             android:nestedScrollingEnabled="false"
             android:layout_marginBottom="16dp" />
 
-        <!-- Empty -->
+      
         <TextView
             android:id="@+id/textViewNoAppointments"
             android:layout_width="match_parent"
