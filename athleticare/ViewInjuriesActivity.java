@@ -38,7 +38,7 @@ public class ViewInjuriesActivity extends AppCompatActivity {
 
         db = FirebaseFirestore.getInstance();
 
-        // views (MATCHED TO XML)
+       
         editTextSearchId = findViewById(R.id.editTextSearchId);
         editTextSearchSport = findViewById(R.id.editTextSearchSport);
         editTextBodyPart = findViewById(R.id.editTextBodyPart);
