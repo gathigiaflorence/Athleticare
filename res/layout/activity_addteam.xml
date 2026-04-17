@@ -21,7 +21,7 @@
             android:elevation="6dp"
             android:layout_margin="16dp">
 
-            <!-- Title -->
+           
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
                 android:textColor="#64748B"
                 android:layout_marginBottom="20dp" />
 
-            <!-- SECTION: Personal Info -->
+          
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
                 android:textColor="#16A34A"
                 android:layout_marginBottom="10dp" />
 
-            <!-- Name -->
+           
             <EditText
                 android:id="@+id/editTextName"
                 android:layout_width="match_parent"
@@ -60,7 +60,7 @@
                 android:textColorHint="#94A3B8"
                 android:layout_marginBottom="14dp" />
 
-            <!-- School ID -->
+           
             <EditText
                 android:id="@+id/editTextSchoolId"
                 android:layout_width="match_parent"
@@ -72,7 +72,7 @@
                 android:textColorHint="#94A3B8"
                 android:layout_marginBottom="14dp" />
 
-            <!-- Age -->
+           
             <EditText
                 android:id="@+id/editTextAge"
                 android:layout_width="match_parent"
@@ -84,7 +84,7 @@
                 android:textColorHint="#94A3B8"
                 android:layout_marginBottom="20dp" />
 
-            <!-- SECTION: Team Info -->
+            
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
                 android:textColor="#16A34A"
                 android:layout_marginBottom="10dp" />
 
-            <!-- Gender Label -->
+           
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp" />
 
-            <!-- Save Button -->
+           
             <Button
                 android:id="@+id/btnSavePlayer"
                 android:layout_width="match_parent"
