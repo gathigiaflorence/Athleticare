@@ -11,7 +11,7 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <!-- TITLE -->
+        
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
             android:layout_gravity="center"
             android:layout_marginBottom="16dp"/>
 
-        <!-- BODY PART DISPLAY -->
+       
         <TextView
             android:id="@+id/textBodyPart"
             android:layout_width="wrap_content"
@@ -32,7 +32,7 @@
             android:textColor="#F8FAFC"
             android:layout_marginBottom="12dp"/>
 
-        <!-- SEARCH SECTION CARD -->
+        
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
                 android:textColor="#FFFFFF"/>
         </LinearLayout>
 
-        <!-- PATIENT INFO -->
+       
         <TextView
             android:id="@+id/textViewName"
             android:layout_width="wrap_content"
@@ -78,7 +78,7 @@
             android:textColor="#F8FAFC"
             android:layout_marginBottom="16dp"/>
 
-        <!-- INJURY TYPE -->
+      
         <EditText
             android:id="@+id/editTextInjuryType"
             android:layout_width="match_parent"
@@ -88,14 +88,14 @@
             android:textColor="#F8FAFC"
             android:textColorHint="#64748B"/>
 
-        <!-- SEVERITY -->
+       
         <Spinner
             android:id="@+id/spinnerSeverity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"/>
 
-        <!-- DATE -->
+        
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
             android:textColor="#0F172A"
             android:layout_marginBottom="16dp"/>
 
-        <!-- NOTES -->
+        
         <EditText
             android:id="@+id/editTextInjuryNotes"
             android:layout_width="match_parent"
@@ -125,7 +125,7 @@
             android:textColor="#F8FAFC"
             android:textColorHint="#64748B"/>
 
-        <!-- RECOMMENDATIONS -->
+       
         <EditText
             android:id="@+id/editTextRecommendation"
             android:layout_width="match_parent"
@@ -136,7 +136,7 @@
             android:textColor="#F8FAFC"
             android:textColorHint="#64748B"/>
 
-        <!-- SAVE -->
+        
         <Button
             android:id="@+id/btnSaveInjury"
             android:layout_width="match_parent"
