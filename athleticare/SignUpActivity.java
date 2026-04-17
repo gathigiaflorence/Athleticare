@@ -119,7 +119,7 @@ public class SignUpActivity extends AppCompatActivity {
                     userMap.put("email", email);
                     userMap.put("role", role);
 
-                    // 🔥 CRITICAL FIX: ALWAYS USE sport (never team)
+                   
                     userMap.put("sport", role.equals("Coach") ? sport : "None");
 
                     db.collection("Users").document(uid)
