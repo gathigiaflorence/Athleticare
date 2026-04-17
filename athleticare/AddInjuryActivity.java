@@ -41,7 +41,7 @@ public class AddInjuryActivity extends AppCompatActivity {
 
     private void initClicks() {
 
-        // central mapping (much easier to maintain)
+      
         Map<LinearLayout, String> injuryMap = new HashMap<>();
 
         injuryMap.put(cardKnee, "KNEE");
