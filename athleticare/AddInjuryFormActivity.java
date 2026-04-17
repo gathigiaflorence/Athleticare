@@ -143,7 +143,7 @@ public class AddInjuryFormActivity extends AppCompatActivity {
         textViewSport.setText("Sport: -");
     }
 
-    // FIXED: Only today or earlier allowed
+    
     private void showDatePicker() {
 
         Calendar calendar = Calendar.getInstance();
@@ -166,7 +166,7 @@ public class AddInjuryFormActivity extends AppCompatActivity {
                 calendar.get(Calendar.DAY_OF_MONTH)
         );
 
-        // THIS BLOCKS FUTURE DATES
+        
         dialog.getDatePicker().setMaxDate(System.currentTimeMillis());
 
         dialog.show();
