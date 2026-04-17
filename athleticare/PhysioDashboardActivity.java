@@ -25,18 +25,18 @@ public class PhysioDashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_physiodashboard);
 
-        // Firebase
+        
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
 
-        // 🔴 Safety check (IMPORTANT)
+        
         if (mAuth.getCurrentUser() == null) {
             startActivity(new Intent(this, MainActivity.class));
             finish();
             return;
         }
 
-        // Bind views
+        
         welcomeTextPhysio = findViewById(R.id.welcomeTextPhysio);
         cardAddInjury = findViewById(R.id.cardAddInjury);
         cardViewInjuries = findViewById(R.id.cardViewInjuries);
@@ -44,10 +44,10 @@ public class PhysioDashboardActivity extends AppCompatActivity {
         cardFollowUp = findViewById(R.id.cardFollowUp);
         cardLogout = findViewById(R.id.cardLogout);
 
-        // Load physio name
+       
         fetchPhysioName();
 
-        // Navigation
+        
         cardAddInjury.setOnClickListener(v ->
                 startActivity(new Intent(this, AddInjuryActivity.class)));
 
@@ -60,7 +60,7 @@ public class PhysioDashboardActivity extends AppCompatActivity {
         cardFollowUp.setOnClickListener(v ->
                 startActivity(new Intent(this, FollowUpActivity.class)));
 
-        // Logout
+       
         cardLogout.setOnClickListener(v -> {
             mAuth.signOut();
             startActivity(new Intent(this, MainActivity.class));
