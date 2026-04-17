@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="#0F172A">
 
-    <!-- Main Content -->
+   
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -57,14 +57,14 @@
                     android:layout_marginBottom="14dp" />
             </LinearLayout>
 
-            <!-- BOUNDARY SEPARATOR -->
+          
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#1E293B"
                 android:layout_marginBottom="14dp" />
 
-            <!-- Welcome -->
+         
             <TextView
                 android:id="@+id/welcomeTextPhysio"
                 android:layout_width="wrap_content"
@@ -83,7 +83,7 @@
                 android:textColor="#94A3B8"
                 android:layout_marginBottom="24dp" />
 
-            <!-- CARD: Add Injury -->
+           
             <LinearLayout
                 android:id="@+id/cardAddInjury"
                 android:layout_width="match_parent"
@@ -104,7 +104,7 @@
                     android:textColor="#16A34A"/>
             </LinearLayout>
 
-            <!-- CARD: View Injuries -->
+           
             <LinearLayout
                 android:id="@+id/cardViewInjuries"
                 android:layout_width="match_parent"
@@ -125,7 +125,7 @@
                     android:textColor="#16A34A"/>
             </LinearLayout>
 
-            <!-- CARD: Appointments -->
+           
             <LinearLayout
                 android:id="@+id/cardAppointments"
                 android:layout_width="match_parent"
@@ -146,7 +146,7 @@
                     android:textColor="#16A34A"/>
             </LinearLayout>
 
-            <!-- CARD: Follow Up -->
+           
             <LinearLayout
                 android:id="@+id/cardFollowUp"
                 android:layout_width="match_parent"
@@ -170,7 +170,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- Logout Button (Bottom Right) -->
+   
     <LinearLayout
         android:id="@+id/cardLogout"
         android:layout_width="140dp"
