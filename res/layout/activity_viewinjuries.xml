@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- TITLE -->
+ 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="12dp" />
 
-    <!-- FILTER CARD -->
+   
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
         android:padding="12dp"
         android:layout_marginBottom="10dp">
 
-        <!-- Athlete ID -->
+       
         <EditText
             android:id="@+id/editTextSearchId"
             android:layout_width="match_parent"
@@ -40,7 +40,7 @@
             android:textColorHint="#64748B"
             android:imeOptions="actionSearch" />
 
-        <!-- Sport -->
+       
         <EditText
             android:id="@+id/editTextSearchSport"
             android:layout_width="match_parent"
@@ -53,7 +53,7 @@
             android:textColorHint="#64748B"
             android:imeOptions="actionSearch" />
 
-        <!-- Body Part Filter -->
+        
         <EditText
             android:id="@+id/editTextBodyPart"
             android:layout_width="match_parent"
@@ -65,7 +65,7 @@
             android:textColor="#0F172A"
             android:textColorHint="#64748B" />
 
-        <!-- Severity Filter -->
+       
         <EditText
             android:id="@+id/editTextSeverity"
             android:layout_width="match_parent"
@@ -77,7 +77,7 @@
             android:textColor="#0F172A"
             android:textColorHint="#64748B" />
 
-        <!-- SEARCH BUTTON -->
+       
         <Button
             android:id="@+id/btnSearchInjuries"
             android:layout_width="match_parent"
@@ -88,7 +88,7 @@
             android:textColor="#FFFFFF" />
     </LinearLayout>
 
-    <!-- QUICK STATS HEADER -->
+    
     <TextView
         android:id="@+id/textStats"
         android:layout_width="wrap_content"
@@ -98,7 +98,7 @@
         android:textColor="#F8FAFC"
         android:layout_marginBottom="8dp" />
 
-    <!-- LOADING -->
+   
     <TextView
         android:id="@+id/textLoading"
         android:layout_width="wrap_content"
@@ -109,7 +109,7 @@
         android:textColor="#94A3B8"
         android:layout_marginBottom="8dp" />
 
-    <!-- EMPTY -->
+   
     <TextView
         android:id="@+id/textEmptyState"
         android:layout_width="wrap_content"
@@ -120,7 +120,7 @@
         android:textColor="#94A3B8"
         android:layout_marginBottom="8dp" />
 
-    <!-- RESULTS -->
+    
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerInjuries"
         android:layout_width="match_parent"
