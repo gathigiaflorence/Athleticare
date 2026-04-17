@@ -11,7 +11,7 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- HEADER -->
+       
         <TextView
             android:id="@+id/titleRecommendations"
             android:layout_width="wrap_content"
@@ -32,14 +32,14 @@
             android:layout_gravity="center"
             android:layout_marginBottom="16dp" />
 
-        <!-- FEED CONTAINER -->
+        
         <LinearLayout
             android:id="@+id/recommendationsContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" />
 
-        <!-- EMPTY STATE -->
+      
         <TextView
             android:id="@+id/textEmptyState"
             android:layout_width="match_parent"
