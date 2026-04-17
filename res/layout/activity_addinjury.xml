@@ -11,7 +11,7 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Title -->
+       
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"/>
 
-        <!-- GRID -->
+       
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
             android:useDefaultMargins="true"
             android:alignmentMode="alignMargins">
 
-            <!-- KNEE -->
+           
             <LinearLayout
                 android:id="@+id/cardKnee"
                 style="@style/InjuryCard"
@@ -47,7 +47,7 @@
                     android:textColor="#16A34A"/>
             </LinearLayout>
 
-            <!-- SHOULDER -->
+           
             <LinearLayout
                 android:id="@+id/cardShoulder"
                 style="@style/InjuryCard"
@@ -64,7 +64,7 @@
                     android:textColor="#16A34A"/>
             </LinearLayout>
 
-            <!-- BACK -->
+          
             <LinearLayout
                 android:id="@+id/cardBack"
                 style="@style/InjuryCard"
@@ -81,7 +81,7 @@
                     android:textColor="#16A34A"/>
             </LinearLayout>
 
-            <!-- QUAD -->
+         
             <LinearLayout
                 android:id="@+id/cardQuad"
                 style="@style/InjuryCard"
@@ -98,7 +98,7 @@
                     android:textColor="#16A34A"/>
             </LinearLayout>
 
-            <!-- HAMSTRING -->
+          
             <LinearLayout
                 android:id="@+id/cardHamstring"
                 style="@style/InjuryCard"
@@ -115,7 +115,7 @@
                     android:textColor="#16A34A"/>
             </LinearLayout>
 
-            <!-- ANKLE -->
+           
             <LinearLayout
                 android:id="@+id/cardAnkle"
                 style="@style/InjuryCard"
@@ -132,7 +132,7 @@
                     android:textColor="#16A34A"/>
             </LinearLayout>
 
-            <!-- GROIN -->
+          
             <LinearLayout
                 android:id="@+id/cardGroin"
                 style="@style/InjuryCard"
@@ -149,7 +149,7 @@
                     android:textColor="#16A34A"/>
             </LinearLayout>
 
-            <!-- ELBOW -->
+         
             <LinearLayout
                 android:id="@+id/cardElbow"
                 style="@style/InjuryCard"
@@ -166,7 +166,7 @@
                     android:textColor="#16A34A"/>
             </LinearLayout>
 
-            <!-- WRIST -->
+           
             <LinearLayout
                 android:id="@+id/cardWrist"
                 style="@style/InjuryCard"
