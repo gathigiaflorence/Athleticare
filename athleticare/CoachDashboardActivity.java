@@ -24,32 +24,32 @@ public class CoachDashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coachdashboard);
 
-        // Firebase init
+       
         db = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
 
-        // Bind views (MATCHING YOUR XML IDs)
+       
         welcomeText = findViewById(R.id.welcomeTextCoach);
         cardViewTeam = findViewById(R.id.cardViewTeam);
         cardViewRecommendations = findViewById(R.id.cardViewRecommendations);
         cardLogout = findViewById(R.id.cardLogout);
 
-        // Load coach name
+      
         fetchCoachName();
 
-        // View Team
+        
         cardViewTeam.setOnClickListener(v -> {
             Intent intent = new Intent(CoachDashboardActivity.this, TeamListActivity.class);
             startActivity(intent);
         });
 
-        // Recommendations
+       
         cardViewRecommendations.setOnClickListener(v -> {
             Intent intent = new Intent(CoachDashboardActivity.this, ViewRecommendationsActivity.class);
             startActivity(intent);
         });
 
-        // Logout (FLOATING BUTTON)
+      
         cardLogout.setOnClickListener(v -> {
             mAuth.signOut();
 
