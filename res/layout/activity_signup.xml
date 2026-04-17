@@ -21,7 +21,7 @@
             android:elevation="4dp"
             android:layout_margin="20dp">
 
-            <!-- App Logo -->
+          
             <ImageView
                 android:id="@+id/appLogo"
                 android:layout_width="120dp"
@@ -32,7 +32,7 @@
                 android:contentDescription="App Logo"
                 android:layout_marginBottom="12dp" />
 
-            <!-- App Name -->
+          
             <TextView
                 android:id="@+id/appName"
                 android:layout_width="wrap_content"
@@ -44,7 +44,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="4dp" />
 
-            <!-- Motto -->
+           
             <TextView
                 android:id="@+id/appMotto"
                 android:layout_width="wrap_content"
@@ -56,7 +56,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="24dp" />
 
-            <!-- Sign Up Title -->
+           
             <TextView
                 android:id="@+id/signupTitle"
                 android:layout_width="wrap_content"
@@ -67,7 +67,7 @@
                 android:textColor="#0F172A"
                 android:layout_marginBottom="24dp" />
 
-            <!-- Full Name -->
+          
             <EditText
                 android:id="@+id/editTextName"
                 android:layout_width="match_parent"
@@ -78,7 +78,7 @@
                 android:textColorHint="#94A3B8"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Email -->
+          
             <EditText
                 android:id="@+id/editTextEmail"
                 android:layout_width="match_parent"
@@ -90,7 +90,7 @@
                 android:textColorHint="#94A3B8"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Password -->
+           
             <EditText
                 android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
@@ -102,7 +102,7 @@
                 android:textColorHint="#94A3B8"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Confirm Password -->
+          
             <EditText
                 android:id="@+id/editTextConfirmPassword"
                 android:layout_width="match_parent"
@@ -114,7 +114,7 @@
                 android:textColorHint="#94A3B8"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Role Label -->
+          
             <TextView
                 android:text="Select Role"
                 android:layout_width="wrap_content"
@@ -123,7 +123,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="4dp" />
 
-            <!-- Role Spinner -->
+           
             <Spinner
                 android:id="@+id/spinnerRole"
                 android:layout_width="match_parent"
@@ -131,7 +131,7 @@
                 android:backgroundTint="#16A34A"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Team Label -->
+            
             <TextView
                 android:id="@+id/textViewSelectTeam"
                 android:text="Select Team (Coach Only)"
@@ -142,7 +142,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="4dp" />
 
-            <!-- Team Spinner -->
+           
             <Spinner
                 android:id="@+id/spinnerTeam"
                 android:layout_width="match_parent"
@@ -151,7 +151,7 @@
                 android:visibility="gone"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Sign Up Button -->
+            
             <Button
                 android:id="@+id/btnSignUp"
                 android:layout_width="wrap_content"
