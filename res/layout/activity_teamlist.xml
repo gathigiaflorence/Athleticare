@@ -7,7 +7,7 @@
     android:background="#0F172A"
     android:padding="16dp">
 
-    <!-- Title -->
+  
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,7 +18,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="20dp" />
 
-    <!-- Team Selection Cards -->
+   
     <LinearLayout
         android:id="@+id/teamButtonsLayout"
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
         android:gravity="center"
         android:layout_marginBottom="16dp">
 
-        <!-- Men's Team -->
+       
         <androidx.cardview.widget.CardView
             android:id="@+id/cardMensTeam"
             android:layout_width="0dp"
@@ -48,7 +48,7 @@
                 android:textColor="#16A34A"/>
         </androidx.cardview.widget.CardView>
 
-        <!-- Women's Team -->
+       
         <androidx.cardview.widget.CardView
             android:id="@+id/cardWomensTeam"
             android:layout_width="0dp"
@@ -71,7 +71,7 @@
 
     </LinearLayout>
 
-    <!-- Section Label -->
+   
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
         android:textColor="#94A3B8"
         android:layout_marginBottom="8dp" />
 
-    <!-- RecyclerView -->
+  
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerTeam"
         android:layout_width="match_parent"
@@ -90,7 +90,7 @@
         android:padding="8dp"
         android:clipToPadding="false"/>
 
-    <!-- Add Player Button -->
+   
     <Button
         android:id="@+id/btnAddPlayer"
         android:layout_width="wrap_content"
